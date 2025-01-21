@@ -33,4 +33,7 @@ Sau khi chay xong sẽ hiện dòng chữ hãy copy và chạy
 ```
 sudo docker swarm join --token SWMTKN-1-5xv7z2ijle1dhivalkl5cnwhoadp6h8ae0p7bs5tmanvkpbi3l-5ib6sjrd3w0wdhfsnt8ga7ybd <IP_VPS>
 ```
+Kiểm tra docker swarm đã activite `sudo docker info`
+Kiểm tra các node `sudo docker node ls`
+
 
