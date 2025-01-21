@@ -26,4 +26,7 @@ network:
 ```
 Sau đó run `sudo netplan apply`
 
+- Tạo 3 node với VPS1 là node chính
++ `ssh vào vps1`
+
 
