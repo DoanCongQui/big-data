@@ -5,7 +5,7 @@ Các kiến thức cần có:
 - Cloud
 - Git
 
-# Docker Swarm 
+## Docker Swarm 
 - Đặt địa chỉ ip tỉnh cho các máy ảo 
 
 Run terminal `sudo vim /etc/netplan/<name>.yaml`
