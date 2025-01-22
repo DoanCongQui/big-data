@@ -41,6 +41,11 @@ Kiểm tra các node `sudo docker node ls`
 
 Chạy ứng dụng node từ nguồn có sẳn 
 ```
-sudo docker service create --replicas 5 -p 8085:8085 --name testservice ichte/swarmtest:node
+sudo docker service create --replicas 5 -p 8085:8085 --name <name> ichte/swarmtest:node
+```
+
+Kiểm tra các các dịch vụ chạy trên các máy 
+```
+sudo docker service ps <name>
 ```
 
