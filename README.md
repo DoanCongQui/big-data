@@ -37,6 +37,10 @@ Kiểm tra docker swarm đã activite `sudo docker info`
 
 Kiểm tra các node `sudo docker node ls`
 
+- Chạy dịch vụ trên docker swarm
 
-
+Chạy ứng dụng node từ nguồn có sẳn 
+```
+sudo docker service create --replicas 5 -p 8085:8085 --name testservice ichte/swarmtest:node
+```
 
