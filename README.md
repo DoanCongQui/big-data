@@ -49,3 +49,8 @@ Kiểm tra các các dịch vụ chạy trên các máy
 sudo docker service ps <name>
 ```
 
+Xem các dịch vụ chạy thời gian thực trên các node 
+```
+sudo docker stats
+```
+
