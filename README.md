@@ -54,3 +54,8 @@ Xem các dịch vụ chạy thời gian thực trên các node
 sudo docker stats
 ```
 
+Chuyển phiên làm việc 
+```
+docker swarm join --token <token> <host>:<port>
+```
+
