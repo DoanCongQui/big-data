@@ -11,7 +11,7 @@ Các kiến thức cần có:
 Run terminal `sudo vim /etc/netplan/<name>.yaml`
 
 ```
-network:
+network:z
   ethernets:
     enp0s3:
       dhcp4: no
