@@ -1,4 +1,4 @@
-# Networking
+# Networking Ubuntu Server 24.10
 
 ## 1. Set up static ip
 Run terminal `sudo vim /etc/netplan/<name>.yaml`
