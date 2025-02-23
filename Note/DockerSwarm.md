@@ -1,17 +1,32 @@
 # Docker swarm
 
-- Tạo 3 node với VPS1 là node chính
-Ssh vào VPS1 chạy lệnh `sudo docker swarm init --advertise-addr=<IP_VPS>`
+**1. Tạo 1 node swarm manager**
 
-Sau khi chay xong sẽ hiện dòng chữ hãy copy và chạy
 ```
-sudo docker swarm join --token SWMTKN-1-5xv7z2ijle1dhivalkl5cnwhoadp6h8ae0p7bs5tmanvkpbi3l-5ib6sjrd3w0wdhfsnt8ga7ybd <IP_VPS>
+sudo docker swarm init --advertise-addr=<IP_Manager>
 ```
-Kiểm tra docker swarm đã activite `sudo docker info`
 
-Kiểm tra các node `sudo docker node ls`
+Sau khi chay xong sẽ token để kết nối các node worker
+`
+sudo docker swarm join --token SWMTKN-1-5xv7z2ijle1dhivalkl5cnwhoadp6h8ae0p7bs5tmanvkpbi3l-5ib6sjrd3w0wdhfsnt8ga7ybd <IP_VPS>`
 
-- Chạy dịch vụ trên docker swarm
+Để kiểm tra lại mã token khi quên 
+
+```
+sudo docker swarm join-token worker
+```
+**2. Rời khỏi swarm**
+```
+sudo docker swarm leave --force
+```
+
+**Các lệnh kiểm tra**
+
+- Kiểm tra docker swarm đã activite `sudo docker info`
+
+- Kiểm tra các node `sudo docker node ls`
+
+**3. Chạy dịch vụ trên docker swarm**
 
 Chạy ứng dụng node từ nguồn có sẳn 
 ```

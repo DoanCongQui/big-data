@@ -10,3 +10,7 @@ Cấp quyên sudo cho user
 ```
 sudo usermod -aG sudo newuser
 ```
+## 2. Thay đổi hostname
+```
+sudo hostnamectl set-hostname new_hostname
+```

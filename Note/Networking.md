@@ -1,6 +1,6 @@
 # Networking Ubuntu Server 24.10
 
-## 1. Set up static ip
+## 1. Set up static ip sử dụng netplan
 Run terminal `sudo vim /etc/netplan/<name>.yaml`
 
 Sau đó thay thế đoạn mã sau vào file `.yaml`
@@ -20,3 +20,23 @@ network:z
   version: 2
 ```
 Cuối cùng run `sudo netplan apply` để reset lại ip
+
+## 2. Set up static ip 
+
+Download `sudo apt install ifupdown`
+
+Sau khi download nhập lệnh: `sudo vim /etc/network/interfaces`
+
+```
+source /etc/network/interfaces.d/*
+
+auto lo
+iface lo inet loopback
+
+auto enp0s3
+iface enp0s3 inet dhcp
+
+auto enp0s8
+iface enp0s8 inet static
+address <IP>
+```
