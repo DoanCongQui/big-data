@@ -6,9 +6,10 @@
 sudo docker swarm init --advertise-addr=<IP_Manager>
 ```
 
-Sau khi chay xong sẽ token để kết nối các node worker
-`
-sudo docker swarm join --token SWMTKN-1-5xv7z2ijle1dhivalkl5cnwhoadp6h8ae0p7bs5tmanvkpbi3l-5ib6sjrd3w0wdhfsnt8ga7ybd <IP_VPS>`
+Sau khi chay xong sẽ hiện token để kết nối các node worker
+`docker swarm join --token SWMTKN-1-5xv7z2ijle1dhivalkl5cnwhoadp6h8ae0p7bs5tmanvkpbi3l-5ib6sjrd3w0wdhfsnt8ga7ybd 192.168.10.101:2377`
+
+*Như VD hãy copy phần hiển thị khi tạo và chạy trên các máy worker*
 
 Để kiểm tra lại mã token khi quên 
 
